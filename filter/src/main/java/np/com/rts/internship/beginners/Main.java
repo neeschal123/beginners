@@ -22,9 +22,11 @@ public class Main {
 
   public Main() {
     // Write your code here
-
-
+    public boolean test(Animal a) {
+      return (a.type() =="herbivore");
+    }
   }
+
   public static void main(String[] args) {
     new Main();
   }

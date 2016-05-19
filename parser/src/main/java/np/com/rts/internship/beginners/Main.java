@@ -12,11 +12,17 @@ public class Main {
 
   public Main() {
     // Write your code here
-
-
+    String[] tokens = parseThis.split("-");
+    String s =tokens[2];
+    //System.out.println(s);
+    Double d = Double.parseDouble(s);
+    value=d;
   }
+
 
   public static void main(String[] args) {
     new Main();
+
   }
+
 }
