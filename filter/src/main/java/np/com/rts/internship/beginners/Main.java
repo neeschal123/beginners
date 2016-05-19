@@ -20,12 +20,12 @@ public class Main {
   ArrayList<Animal> omnivores = new ArrayList<>();
 
   public Main() {
-    // Write your code here
     for(Animal obj1:originalList){
-      if(obj1.getType()=="carnivore") {
+      if(obj1.getType().equals("carnivore"))
+      {
         carnivores.add(obj1);
       }
-      else if(obj1.getType()=="herbivore") {
+      else if(obj1.getType().equals("herbivore")) {
         herbivores.add(obj1);
       }
       else{
