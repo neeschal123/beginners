@@ -4,7 +4,6 @@ import java.util.*;
 
 
 public class Main {
-
   ArrayList<Animal> originalList = new ArrayList<Animal>() {{
     add(new Animal("herbivore", "lamb", 4));
     add(new Animal("herbivore", "cow", 4));
@@ -22,11 +21,20 @@ public class Main {
 
   public Main() {
     // Write your code here
-    public boolean test(Animal a) {
-      return (a.type() =="herbivore");
+    for(Animal obj1:originalList){
+      if(obj1.getType()=="carnivore") {
+        carnivores.add(obj1);
+      }
+      else if(obj1.getType()=="herbivore") {
+        herbivores.add(obj1);
+      }
+      else{
+        omnivores.add(obj1);
+      }
     }
-  }
 
+
+  }
   public static void main(String[] args) {
     new Main();
   }
